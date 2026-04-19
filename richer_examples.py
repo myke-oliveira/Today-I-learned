@@ -22,3 +22,5 @@ console.print("[bold]This [underline]is[/] some text![/]")
 console.print("This is a success message!", style="success")
 console.print("This is an error message!", style="error")
 console.print("This is a warning message!", style="warning")
+
+console.print(":thumbs_up: File uploaded successfully!", style="success")
