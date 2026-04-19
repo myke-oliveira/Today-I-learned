@@ -1,5 +1,7 @@
 from rich.markdown import Markdown
 from rich.console import Console
+from rich.columns import Columns
+from rich.panel import Panel
 
 
 md1 = """
@@ -23,5 +25,6 @@ Here is a list of items:
 """
 
 console = Console()
-console.print(Markdown(md1))
-console.print(Markdown(md2))
+markdown1 = Markdown(md1)
+markdown2 = Markdown(md2)
+console.print(Columns([Panel.fit(markdown1, title="panel 1", width=60), Panel.fit(markdown2, title="panel 2", width=60)]))
