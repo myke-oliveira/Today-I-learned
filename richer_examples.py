@@ -1,5 +1,6 @@
 from rich.console import Console
 from rich.theme import Theme
+import time
 
 
 custom_theme = Theme({
@@ -24,3 +25,8 @@ console.print("This is an error message!", style="error")
 console.print("This is a warning message!", style="warning")
 
 console.print(":thumbs_up: File uploaded successfully!", style="success")
+
+for i in range(10):
+    console.log(f"I am about to sleep={i}")
+    time.sleep(.3)
+    console.log(f"But I am briefly awake now.")
